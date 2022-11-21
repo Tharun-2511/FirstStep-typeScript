@@ -1,6 +1,6 @@
-import app from './src/app'
+import app from './src/config/app'
 const port=3009
 app.listen (port, ()=>{
-    console.log('server in maja agaya');
+    console.log('SERVER UP-3009');
     
 })

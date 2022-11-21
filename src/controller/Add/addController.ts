@@ -1,7 +1,7 @@
 import { Request,Response } from "express"
-import AddService from "./addServices"
-import { returnStatus, statusCode } from "./config"
-import AddModel from "./model"
+import AddService from "../../service/addServices"
+import { returnStatus, statusCode } from "../../config/config"
+import AddModel from "../../modules/add/model"
 
 export default class AddController {
     public async AddUser(req:Request,res:Response) {

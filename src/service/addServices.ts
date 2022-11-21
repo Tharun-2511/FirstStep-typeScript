@@ -1,6 +1,6 @@
-import { returnStatus } from "./config"
-import AddModel from "./model"
-import Iam from "./schema"
+import { returnStatus } from "../config/config"
+import AddModel from "../modules/add/model"
+import Iam from "../modules/add/schema"
 
 
 export default class AddService{

@@ -8,7 +8,7 @@ class AddRoutes{
             this.init()
         }
         init(){{
-            this.router.post('/add', this.addcontroller.AddUser)
+            this.router.post('/create', this.addcontroller.AddUser)
         }}
 
 }

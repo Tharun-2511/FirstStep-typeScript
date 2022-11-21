@@ -1,5 +1,5 @@
 import express ,{NextFunction, Request , Response}from 'express'
-import {AppRoutes} from './routes'
+import {AppRoutes} from '../routes/routes'
 import bodyparser from 'body-parser'
 import mongoose from 'mongoose'
 // import addC
@@ -11,7 +11,7 @@ class App{
     public app=express()
     // public app.express:Appli
     private routesprev: AppRoutes = new AppRoutes()
-    public mongourl:string='mongodb+srv://Dharun:Mongodb.com@dharunonenet.xml3dcx.mongodb.net/'
+    public mongourl:string='mongodb+srv://Dharun:Mongodb.com@dharunonenet.xml3dcx.mongodb.net/testing'
     constructor() {
         this.config()
         this.mongosetup()
@@ -24,11 +24,12 @@ class App{
     private mongosetup (): void {
         mongoose
             .connect(this.mongourl)
-            .then(()=> (console.log('db in maja agaya')))
-            .catch(()=>(console.log('margaya')))
+            .then(()=> (console.log('DB-UP')))
+            .catch(()=>(console.log('DB-DOWN')))
     }
     // public routesprev= new AppRoutes()
 }
+console.log('To add user- 3009/api/add/create');
 
 
 export default new App().app
